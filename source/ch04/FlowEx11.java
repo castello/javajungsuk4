@@ -25,7 +25,6 @@ class FlowEx11 {
                         break;
                     case '4':
                         System.out.println("당신은 2000년 이후에 출생한 여자입니다.");
-                        break;
                 }
 
                 break;
