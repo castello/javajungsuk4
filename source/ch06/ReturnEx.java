@@ -1,6 +1,6 @@
 class ReturnEx {
     public static void main(String[] args) {
-        ReturnTest r = new ReturnTest();
+        ReturnEx r = new ReturnEx();
 
         int result = r.add(3,5);
         System.out.println(result);
