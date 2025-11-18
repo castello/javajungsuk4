@@ -86,7 +86,7 @@ class Table3 {
     public int dishNum() { return dishNames.length; }
 }
 
-class ThreadWaitEx3 {
+class WaitNotifyEx3 {
     public static void main(String[] args) throws Exception {
         Table3 table = new Table3();
 
