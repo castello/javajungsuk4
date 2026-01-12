@@ -37,7 +37,7 @@ public class CompletableFutureEx4 {
 
     // 2.1 작업 결과 받지 않고, 후속 작업 실행. 반환값 없음.
     static void thenRun() {
-        CompletableFuture<String> cf = CompletableFuture.supplyAsync(() -> "Y");
+        CompletableFuture<Void> cf = CompletableFuture.runAsync(() -> {});
         cf.thenRun(()-> System.out.println("thenRun()=작업이 완료되었습니다."));
     }
 
