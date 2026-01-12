@@ -5,7 +5,7 @@ import java.util.concurrent.CompletionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-// [예제3] complete() 관련 메서드 - completeOnTimeout - 에제2에 설명에 간단히 넣고 끝내자.
+// [예제3] complete() 관련 메서드 - completeOnTimeout
 public class CompletableFutureEx3 {
     public static void main(String[] args) {
         CompletableFuture<String>  cFuture = CompletableFuture.supplyAsync(()-> getInput())
