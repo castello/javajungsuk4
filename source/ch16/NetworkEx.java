@@ -16,10 +16,10 @@ class NetworkEx {
             byte[] ipAddr = ip.getAddress();
             System.out.println("getAddress() :"+Arrays.toString(ipAddr));
 
-            String result = "";
-            for(int i=0; i < ipAddr.length;i++) {
-                result += (ipAddr[i] < 0) ? ipAddr[i] + 256 : ipAddr[i];
-                result += ".";
+            StringBuilder result = new StringBuilder();
+            for(int i=0; i < ipAddr.length; i++) {
+                result.append((ipAddr[i] < 0) ? ipAddr[i] + 256 : ipAddr[i]);
+                if (i < ipAddr.length - 1) result.append(".");
             }
             System.out.println("getAddress()+256 :"+result);
             System.out.println();
