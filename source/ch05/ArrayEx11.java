@@ -13,7 +13,7 @@ class ArrayEx11 {
             counter[numArr[i]]++;
         }
 
-        for (int i=0; i < numArr.length; i++ ) {
+        for (int i=0; i < counter.length; i++ ) {
             System.out.println( i +"의 개수 :"+ counter[i]);
         }
     } // main의 끝
